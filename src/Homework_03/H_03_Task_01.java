@@ -1,6 +1,6 @@
 package Homework_03;
 
-public class H_03_T_01 {
+public class H_03_Task_01 {
     int[] arr = new int[10];
 
     public void run() {
