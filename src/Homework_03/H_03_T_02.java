@@ -1,30 +1,42 @@
 package Homework_03;
 
 public class H_03_T_02 {
-    public static void run() {
+    int[] arr = new int[50];
+
+    public void run() {
         showTaskDescription();
-        createAndTranformArray();
+        createArray();
+        showArray("in direct order");
+        showArray("in reversed order");
     }
 
-    public static void showTaskDescription() {
+    public void showTaskDescription() {
         System.out.println("Создайте массив из всех нечётных чисел от 1 до 99, выведите его на экран в строку, " +
-                "а затем этот же массив выведите на экран тоже в строку, но в обратном порядке (99 97 95 93 … 7 5 3 1).");
+                "а затем этот же массив выведите на экран тоже в строку, но в обратном порядке (99 97 95 93 … 7 5 3 1).\n");
     }
 
-    public static void createAndTranformArray() {
-        String outputLine = "";
-        for (Integer i=1; i<=99; i=i+2){
-            outputLine = outputLine+i.toString();
-            if (i!=20) outputLine = outputLine+" ";
+    public void createArray() {
+        for (int i=0; i<=arr.length-1; i++){
+            this.arr[i]=i*2+1;
         }
-        System.out.println(outputLine);
     }
 
-    public static void showArrayInOneColumn() {
+    public void showArray(String howToShow) {
+        String delimiter = " ";
         String outputLine = "";
-        for (Integer i=2; i<=20; i=i+2){
-            outputLine = outputLine+i.toString();
-            if (i!=20) outputLine = outputLine+"\n";
+        switch (howToShow){
+            case ("in direct order"):
+                for (int j=0; j<=arr.length-1; j++){
+                    outputLine = String.format("%s%d", outputLine, arr[j]);
+                    if (j!=arr.length-1) outputLine = outputLine+delimiter;
+                }
+                break;
+            case ("in reversed order"):
+                for (int j=arr.length-1; j>=0; j--){
+                    outputLine = String.format("%s%d", outputLine, arr[j]);
+                    if (j!=0) outputLine = outputLine+delimiter;
+                }
+                break;
         }
         System.out.println(outputLine);
     }
