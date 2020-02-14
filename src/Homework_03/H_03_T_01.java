@@ -1,7 +1,7 @@
 package Homework_03;
 
 public class H_03_T_01 {
-    public int arr[];
+    int[] arr = new int[10];
 
     public void run() {
         showTaskDescription();
@@ -10,15 +10,15 @@ public class H_03_T_01 {
         showArray("In one column");
     }
 
-    public static void showTaskDescription() {
+    public void showTaskDescription() {
         System.out.println("1. Создайте массив из всех чётных чисел от 2 до 20 и выведите элементы массива на экран сначала в строку, " +
                 "отделяя один элемент от другого пробелом, а затем в столбик (отделяя один элемент от другого началом новой строки). " +
                 "Перед созданием массива подумайте, какого он будет размера.\n");
     }
 
     public void createArray() {
-        for (int i=0; i<=20; i=i+2){
-            this.arr[i]=i+2;
+        for (int i=0; i<=arr.length-1; i++){
+            this.arr[i]=2*(i+1);
         }
     }
 
@@ -34,9 +34,9 @@ public class H_03_T_01 {
                 break;
         }
 
-        for (int j=0; j<=arr.length; j++){
-            outputLine = outputLine+arr[j];
-            if (j!=20) outputLine = outputLine+delimiter;
+        for (int j=0; j<=arr.length-1; j++){
+            outputLine = String.format("%s%d", outputLine, arr[j]);
+            if (j!=arr.length-1) outputLine = outputLine+delimiter;
         }
 
         System.out.println(outputLine);
