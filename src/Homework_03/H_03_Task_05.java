@@ -1,17 +1,17 @@
 package Homework_03;
 
 public class H_03_Task_05 {
-    int[] arr = new int[8];
 
     public void run() {
-        System.out.println("Создайте 2 массива из 5 случайных целых чисел из отрезка [0;5] каждый,\n" +
+        System.out.println(Main.taskDelimiter+
+                "5. Создайте 2 массива из 5 случайных целых чисел из отрезка [0;5] каждый,\n" +
                 "выведите массивы на экран в двух отдельных строках.\n" +
-                "Посчитайте среднее арифметическое элементов каждого массива и сообщите,\n" +
-                "для какого из массивов это значение оказалось больше (либо сообщите, что их средние арифметические равны).\n");
+                "Посчитайте среднее арифметическое элементов каждого массива и сообщите, для какого из массивов \n" +
+                "это значение оказалось больше (либо сообщите, что их средние арифметические равны).\n");
         int[] arrA = Main.createArrayOfRandomInt(5, 0, 5);
         int[] arrB = Main.createArrayOfRandomInt(5, 0, 5);
-        Main.showArray(arrA,"in direct order");
-        Main.showArray(arrB,"in direct order");
+        Main.showArray(arrA,"in one line");
+        Main.showArray(arrB,"in one line");
         double avgA = averageOfArray(arrA);
         double avgB = averageOfArray(arrB);
         if (avgA == avgB) {
