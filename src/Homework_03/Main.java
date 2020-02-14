@@ -5,8 +5,10 @@ public class Main {
         /*
         H_03_T_01 task1 = new H_03_T_01();
         task1.run();
-        */
         H_03_T_02 task2 = new H_03_T_02();
         task2.run();
+        */
+        H_03_T_03 task3 = new H_03_T_03();
+        task3.run();
     }
 }
