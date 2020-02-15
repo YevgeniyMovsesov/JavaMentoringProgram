@@ -17,9 +17,11 @@ public class Main {
         task6.run();
         H_03_Task_07 task7 = new H_03_Task_07();
         task7.run();
-
         H_03_Task_08 task8 = new H_03_Task_08();
         task8.run();
+
+        H_03_Task_09 task9 = new H_03_Task_09();
+        task9.run();
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
@@ -27,9 +29,19 @@ public class Main {
     public static int[] createArrayOfRandomInt(int length, int leftBoundary, int rightBoundary) {
         int[] arr = new int[length];
         for (int i = 0; i<=arr.length-1; i++){
-            arr[i]=(int) (Math.random() * (rightBoundary - leftBoundary) + leftBoundary);
+            arr[i]=(int) (Math.random() * (rightBoundary - leftBoundary + 1) + leftBoundary);
         }
         return arr;
+    }
+
+    public static void showArray(double[] arr, String howToShow) {
+        String outputLine = "";
+        if ("in one line".equals(howToShow)) {
+            for (int j = 0; j <= arr.length - 1; j++) {
+                outputLine = String.format("%s%5.2f", outputLine, arr[j]);
+            }
+        }
+        System.out.println(outputLine);
     }
 
     public static void showArray(int[] arr, String howToShow) {
