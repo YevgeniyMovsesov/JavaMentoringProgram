@@ -1,4 +1,4 @@
-package Homework_03;
+package homework_03;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,12 +13,14 @@ public class Main {
         task4.run();
         H_03_Task_05 task5 = new H_03_Task_05();
         task5.run();
-         */
         H_03_Task_06 task6 = new H_03_Task_06();
         task6.run();
+         */
+        H_03_Task_07 task7 = new H_03_Task_07();
+        task7.run();
     }
 
-    public static String taskDelimiter = "------------------------------------------------------------------------\n";
+    public static final String taskDelimiter = "------------------------------------------------------------------------\n";
 
     public static int[] createArrayOfRandomInt(int length, int leftBoundary, int rightBoundary) {
         int[] arr = new int[length];

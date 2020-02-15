@@ -1,4 +1,4 @@
-package Lesson01;
+package lesson01;
 
 public class Task3 {
     public static void run(String name1, String name2){

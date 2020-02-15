@@ -1,4 +1,4 @@
-package Lesson03;
+package lesson03;
 
 public class Cat_Class {
     private String mew;

@@ -1,4 +1,4 @@
-package Lesson01;
+package lesson01;
 
 public class Task4 {
     public static void run (int monthNumber){
@@ -16,10 +16,10 @@ public class Task4 {
                 season = "лету";
             } else if(monthNumber >= 9 && monthNumber <= 1) {
                 season = "осени";
-            };
+            }
         } else {
             System.out.println("Неизвестный номер месяца");
-        };
+        }
 
         System.out.println("Месяц " + monthNumber + " относится к " + season);
 

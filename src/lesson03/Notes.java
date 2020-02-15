@@ -1,7 +1,8 @@
-package Lesson03;
+package lesson03;
 
 public class Notes {
     public static void main(String[] args) {
+        int i = 1;
         // % - остаток от деления
         /*
         Follow applied for methods, members (fields, variables)

@@ -1,4 +1,4 @@
-package Homework_03;
+package homework_03;
 
 import java.io.IOException;
 
@@ -33,15 +33,15 @@ public class H_03_Task_06 {
     }
 
     public boolean sequenceIsAscended(int[] arr) {
-        boolean inAscencionOrder = true;
+        boolean inAscensionOrder = true;
         int i = 0;
-        while (inAscencionOrder && i <= arr.length-2) {
+        while (inAscensionOrder && i <= arr.length-2) {
             if (arr[i] >= arr[i+1]) {
-                inAscencionOrder = false;
+                inAscensionOrder = false;
             }
             i++;
         }
-        return inAscencionOrder;
+        return inAscensionOrder;
     }
 
 }

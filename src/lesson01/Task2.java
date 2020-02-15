@@ -1,8 +1,8 @@
-package Lesson01;
+package lesson01;
 
 public class Task2 {
     public static void run(int a, int b, int c, int d, int e) {
-        int arr[] = new int[5];
+        int[] arr = new int[5];
         arr[0]=a;
         arr[1]=b;
         arr[2]=c;
