@@ -2,6 +2,7 @@ package Homework_03;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         H_03_Task_01 task1 = new H_03_Task_01();
         task1.run();
         H_03_Task_02 task2 = new H_03_Task_02();
@@ -12,6 +13,9 @@ public class Main {
         task4.run();
         H_03_Task_05 task5 = new H_03_Task_05();
         task5.run();
+         */
+        H_03_Task_06 task6 = new H_03_Task_06();
+        task6.run();
     }
 
     public static String taskDelimiter = "------------------------------------------------------------------------\n";
