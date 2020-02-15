@@ -19,7 +19,7 @@ public class Task2 {
             if (arr[i] < min) {
                 min = arr[i];
             }
-            message = message + arr[i];
+            message = String.format("%s%d", message, arr[i]);
             if (i < 4) {
                 message = message + ", ";
             }

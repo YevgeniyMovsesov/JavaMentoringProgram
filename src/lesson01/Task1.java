@@ -7,12 +7,7 @@ public class Task1 {
         System.out.println("Вывести на консоль количество максимальных чисел среди этих четырех.");
 
         int min;
-
-        if (a < b) {
-            min = a;
-        } else {
-            min = b;
-        }
+        min = Math.min(a,b);
 
         if (c < min) {
             min = c;
