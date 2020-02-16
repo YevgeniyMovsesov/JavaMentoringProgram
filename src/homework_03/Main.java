@@ -2,7 +2,7 @@ package homework_03;
 
 public class Main {
     public static void main(String[] args) {
-
+        /**/
         H_03_Task_01 task1 = new H_03_Task_01();
         task1.run();
         H_03_Task_02 task2 = new H_03_Task_02();
@@ -19,9 +19,12 @@ public class Main {
         task7.run();
         H_03_Task_08 task8 = new H_03_Task_08();
         task8.run();
-
         H_03_Task_09 task9 = new H_03_Task_09();
         task9.run();
+        /* */
+        H_03_Task_10 task10 = new H_03_Task_10();
+        task10.run();
+
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
@@ -29,7 +32,10 @@ public class Main {
     public static int[] createArrayOfRandomInt(int length, int leftBoundary, int rightBoundary) {
         int[] arr = new int[length];
         for (int i = 0; i<=arr.length-1; i++){
-            arr[i]=(int) (Math.random() * (rightBoundary - leftBoundary + 1) + leftBoundary);
+            //arr[i]=(int)(Math.random() * (rightBoundary - leftBoundary + 1) + leftBoundary);
+                arr[i]=(int)Math.round(
+                        Math.random() * (rightBoundary - leftBoundary) + leftBoundary
+                );
         }
         return arr;
     }
