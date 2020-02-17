@@ -29,9 +29,11 @@ public class Main {
         task12.run();
         H_03_Task_13 task13 = new H_03_Task_13();
         task13.run();
-        /* */
         H_03_Task_14 task14 = new H_03_Task_14();
         task14.run();
+        /* */
+        H_03_Task_15 task15 = new H_03_Task_15();
+        task15.run();
 
     }
 
@@ -46,6 +48,18 @@ public class Main {
                 );
         }
         return arr;
+    }
+
+    public static int[][] create2DArrayOfRandomInt (int rows, int columns, int leftBoundary, int rightBoundary) {
+        int[][] arrA = new int[rows][columns];
+        for (int i=0; i<arrA.length; i++){
+            for (int j=0; j < arrA[0].length; j++) {
+                arrA[i][j]=(int)Math.round(
+                        Math.random() * (rightBoundary - leftBoundary) + leftBoundary
+                );
+            }
+        }
+        return arrA;
     }
 
     public static void showArray(double[] arr, String howToShow) {
@@ -85,7 +99,7 @@ public class Main {
         for (int[] ints : arr) {
             String outputLine = "";
             for (int j = 0; j < arr[0].length; j++) {
-                outputLine = String.format("%s %d", outputLine, ints[j]);
+                outputLine = String.format("%s%4d", outputLine, ints[j]);
             }
             System.out.println(outputLine);
         }
