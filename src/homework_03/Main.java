@@ -31,9 +31,11 @@ public class Main {
         task13.run();
         H_03_Task_14 task14 = new H_03_Task_14();
         task14.run();
-        /* */
         H_03_Task_15 task15 = new H_03_Task_15();
         task15.run();
+        /* */
+        H_03_Task_16 task16 = new H_03_Task_16();
+        task16.run();
 
     }
 
