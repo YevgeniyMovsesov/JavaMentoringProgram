@@ -27,9 +27,11 @@ public class Main {
         task11.run();
         H_03_Task_12 task12 = new H_03_Task_12();
         task12.run();
-        /* */
         H_03_Task_13 task13 = new H_03_Task_13();
         task13.run();
+        /* */
+        H_03_Task_14 task14 = new H_03_Task_14();
+        task14.run();
 
     }
 
@@ -76,5 +78,16 @@ public class Main {
                 break;
         }
         System.out.println(outputLine);
+    }
+
+
+    public static void showArray(int[][] arr) {
+        for (int[] ints : arr) {
+            String outputLine = "";
+            for (int j = 0; j < arr[0].length; j++) {
+                outputLine = String.format("%s %d", outputLine, ints[j]);
+            }
+            System.out.println(outputLine);
+        }
     }
 }
