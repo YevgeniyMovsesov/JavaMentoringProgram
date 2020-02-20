@@ -18,7 +18,7 @@ public class H_03_Task_11 {
         while (continueFlag) {
             Scanner myInput = new Scanner( System.in );
             i = myInput.nextInt();
-            if (i < 2 || i % 2 == 1) {
+            if (i < 2 && i % 2 == 1) {
                 System.out.println("Требуется чётное положительное число");
             } else {
                 continueFlag = false;

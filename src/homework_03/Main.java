@@ -2,7 +2,7 @@ package homework_03;
 
 public class Main {
     public static void main(String[] args) {
-        /**/
+        /*
         H_03_Task_01 task1 = new H_03_Task_01();
         task1.run();
         H_03_Task_02 task2 = new H_03_Task_02();
@@ -37,9 +37,11 @@ public class Main {
         task16.run();
         H_03_Task_17 task17 = new H_03_Task_17();
         task17.run();
-        /* */
         H_03_Task_18 task18 = new H_03_Task_18();
         task18.run();
+        /* */
+        H_03_Task_19 task19 = new H_03_Task_19();
+        task19.run();
 
     }
 
@@ -110,4 +112,11 @@ public class Main {
             System.out.println(outputLine);
         }
     }
+
+    public static void showArray(String[] arr) {
+        for (String s : arr) {
+            System.out.println(s);
+        }
+    }
+
 }

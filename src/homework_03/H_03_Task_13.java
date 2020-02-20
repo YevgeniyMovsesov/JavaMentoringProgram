@@ -29,16 +29,16 @@ public class H_03_Task_13 {
         Main.showArray(arrB,"in one line");
     }
 
-    public static int[] createArrayOfEvenElements(int[] arr_in) {
-        int[] arr_out = new int[arr_in.length];
+    public static int[] createArrayOfEvenElements(int[] arrIn) {
+        int[] arrOut = new int[arrIn.length];
         int j = 0;
-        for (int i:arr_in) {
+        for (int i:arrIn) {
             // Ноль является чётным числом - https://ru.wikipedia.org/wiki/Чётность_нуля
             if (i % 2 == 0) {
-                arr_out[j] = i;
+                arrOut[j] = i;
                 j++;
             }
         }
-        return Arrays.copyOfRange(arr_out,0,j);
+        return Arrays.copyOfRange(arrOut,0,j);
     }
 }
