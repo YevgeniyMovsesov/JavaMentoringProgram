@@ -1,4 +1,4 @@
-package homework_03;
+package homework_03_Arrays;
 
 public class Main {
     public static void main(String[] args) {

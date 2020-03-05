@@ -1,4 +1,4 @@
-package homework_03;
+package homework_03_Arrays;
 
 import java.io.IOException;
 

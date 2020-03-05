@@ -1,4 +1,4 @@
-package homework_03;
+package homework_03_Arrays;
 
 public class H_03_Task_03 {
 
