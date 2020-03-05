@@ -40,11 +40,21 @@ public class Main {
         H_04_Task_18 task18 = new H_04_Task_18();
         task18.run();
         /* */
-        H_04_Task_05 task5 = new H_04_Task_05();
-        task5.run();
+        H_04_Task_11 task11 = new H_04_Task_11();
+        task11.run();
 
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
+
+    public static int numberOfOccurrences(String stringToSearch, String substring) {
+        int counter = 0;
+        while (stringToSearch.indexOf(substring)>0) {
+            stringToSearch = stringToSearch.replaceFirst(substring,"");
+            counter++;
+        }
+        return counter;
+    }
+
 
 }
