@@ -40,83 +40,11 @@ public class Main {
         H_04_Task_18 task18 = new H_04_Task_18();
         task18.run();
         /* */
-        H_04_Task_02 task2 = new H_04_Task_02();
-        task2.run();
+        H_04_Task_05 task5 = new H_04_Task_05();
+        task5.run();
 
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
-
-    public static int[] createArrayOfRandomInt(int length, int leftBoundary, int rightBoundary) {
-        int[] arr = new int[length];
-        for (int i = 0; i<=arr.length-1; i++){
-            //arr[i]=(int)(Math.random() * (rightBoundary - leftBoundary + 1) + leftBoundary);
-                arr[i]=(int)Math.round(
-                        Math.random() * (rightBoundary - leftBoundary) + leftBoundary
-                );
-        }
-        return arr;
-    }
-
-    public static int[][] create2DArrayOfRandomInt (int rows, int columns, int leftBoundary, int rightBoundary) {
-        int[][] arrA = new int[rows][columns];
-        for (int i=0; i<arrA.length; i++){
-            for (int j=0; j < arrA[0].length; j++) {
-                arrA[i][j]=(int)Math.round(
-                        Math.random() * (rightBoundary - leftBoundary) + leftBoundary
-                );
-            }
-        }
-        return arrA;
-    }
-
-    public static void showArray(double[] arr, String howToShow) {
-        String outputLine = "";
-        if ("in one line".equals(howToShow)) {
-            for (int j = 0; j <= arr.length - 1; j++) {
-                outputLine = String.format("%s%5.2f", outputLine, arr[j]);
-            }
-        }
-        System.out.println(outputLine);
-    }
-
-    public static void showArray(int[] arr, String howToShow) {
-        String delimiter = " ";
-        String outputLine = "";
-        switch (howToShow){
-            case ("in one column"):
-                delimiter = "\n";
-            case ("in one line"):
-                for (int j=0; j<=arr.length-1; j++){
-                    outputLine = String.format("%s%d", outputLine, arr[j]);
-                    if (j!=arr.length-1) outputLine = outputLine+delimiter;
-                }
-                break;
-            case ("in one line in reversed order"):
-                for (int j=arr.length-1; j>=0; j--){
-                    outputLine = String.format("%s%d", outputLine, arr[j]);
-                    if (j!=0) outputLine = outputLine+delimiter;
-                }
-                break;
-        }
-        System.out.println(outputLine);
-    }
-
-
-    public static void showArray(int[][] arr) {
-        for (int[] ints : arr) {
-            String outputLine = "";
-            for (int j = 0; j < arr[0].length; j++) {
-                outputLine = String.format("%s%4d", outputLine, ints[j]);
-            }
-            System.out.println(outputLine);
-        }
-    }
-
-    public static void showArray(String[] arr) {
-        for (String s : arr) {
-            System.out.println(s);
-        }
-    }
 
 }
