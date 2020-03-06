@@ -39,10 +39,33 @@ public class Main {
         task17.run();
         H_04_Task_18 task18 = new H_04_Task_18();
         task18.run();
-        /* */
-        H_04_Task_11 task11 = new H_04_Task_11();
-        task11.run();
-
+        H_04_Task_19 task19 = new H_04_Task_19();
+        task19.run();
+        H_04_Task_20 task20 = new H_04_Task_20();
+        task20.run();
+        H_04_Task_21 task21 = new H_04_Task_21();
+        task21.run();
+        H_04_Task_22 task22 = new H_04_Task_22();
+        task22.run();
+        H_04_Task_23 task23 = new H_04_Task_23();
+        task23.run();
+        H_04_Task_24 task24 = new H_04_Task_24();
+        task24.run();
+        H_04_Task_25 task25 = new H_04_Task_25();
+        task25.run();
+        H_04_Task_26 task26 = new H_04_Task_26();
+        task26.run();
+        H_04_Task_27 task27 = new H_04_Task_27();
+        task27.run();
+        H_04_Task_28 task28 = new H_04_Task_28();
+        task28.run();
+        H_04_Task_29 task29 = new H_04_Task_29();
+        task29.run();
+        H_04_Task_30 task30 = new H_04_Task_30();
+        task30.run();
+        */
+        H_04_Task_20 task20 = new H_04_Task_20();
+        task20.run();
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
