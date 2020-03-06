@@ -64,8 +64,8 @@ public class Main {
         H_04_Task_30 task30 = new H_04_Task_30();
         task30.run();
         */
-        H_04_Task_20 task20 = new H_04_Task_20();
-        task20.run();
+        H_04_Task_30 task30 = new H_04_Task_30();
+        task30.run();
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
@@ -79,5 +79,50 @@ public class Main {
         return counter;
     }
 
+    private static String deleteLetterFromStringByPosition(int letterPosition, String string) {
+        String symbolsBeforeLetter = string.substring(0,letterPosition-1);
+        String symbolsAfterLetter = string.substring(letterPosition);
+        return symbolsBeforeLetter+symbolsAfterLetter;
+    }
 
+
+    public static void deleteMiddleLettersAndPrintWord(String word) {
+        System.out.println(String.format("   До преобразования : %s", word));
+        int letterPositionToDelete;
+
+        if (word.length() % 2 == 0) {
+            letterPositionToDelete = word.length()/2;
+            word = deleteLetterFromStringByPosition(letterPositionToDelete+1, word);
+            word = deleteLetterFromStringByPosition(letterPositionToDelete, word);
+        } else {
+            letterPositionToDelete = (word.length()-1)/2+1;
+            word = deleteLetterFromStringByPosition(letterPositionToDelete, word);
+        }
+        System.out.println(String.format("После преобразования : %s", word));
+
+    }
+
+    public static void insertLetterAfterPositionAndPrintTheWord(char letter, int letterPosition, String word) {
+        System.out.println(String.format("   До преобразования : %s", word));
+        String symbolsBeforeLetter = word.substring(0,letterPosition);
+        String symbolsAfterLetter = word.substring(letterPosition);
+        System.out.println(String.format("После преобразования : %s",
+                symbolsBeforeLetter+letter+symbolsAfterLetter));
+
+    }
+
+    static void swapLetterFromPositionS_ToPositionK(String string, int positionS, int positionK) {
+        System.out.println(String.format("   До преобразования : %s", string));
+        String letterS = string.substring(positionS-1,positionS);
+        String letterK = string.substring(positionK-1,positionK);
+
+        String symbolsBeforeLetterS = string.substring(0,positionS-1);
+        String symbolsBetweenSandK = string.substring(positionS,positionK-1);
+        String symbolsAfterLetterK = string.substring(positionK);
+        System.out.println(String.format("После преобразования (символ %d меняем на %d) : %s",
+                positionS,
+                positionK,
+                symbolsBeforeLetterS+letterK+symbolsBetweenSandK+letterS+symbolsAfterLetterK));
+
+    }
 }
