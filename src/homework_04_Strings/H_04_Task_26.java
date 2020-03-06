@@ -11,7 +11,7 @@ public class H_04_Task_26 {
 
     static void moveFirstLetterToTheEnd (String string) {
         System.out.println(String.format("   До преобразования : %s", string));
-        String symbolsBeforeLetter = string.substring(1,string.length());
+        String symbolsBeforeLetter = string.substring(1);
         String symbolsAfterLetter = string.substring(0,1);
         System.out.println(String.format("После преобразования : %s",
                 symbolsBeforeLetter+symbolsAfterLetter));

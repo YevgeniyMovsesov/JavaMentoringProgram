@@ -31,7 +31,7 @@ public class H_03_Task_19 {
         int numberOfFilledElements;
         String filledString;
         String stringOfEmptyElements;
-        int numberOfLines = Math.round(n/2)+1;
+        int numberOfLines = (int)Math.round(n/2)+1;
         for (int i=0; i<numberOfLines; i++) {
             numberOfFilledElements = i*2 + 1;
             stringOfEmptyElements = "";

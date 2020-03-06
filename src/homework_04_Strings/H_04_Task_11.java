@@ -19,7 +19,7 @@ public class H_04_Task_11 {
 
     public boolean isPalindrome (String line){
         line=line.toUpperCase();
-        for (int i=0; i<=Math.round(line.length() / 2); i++) {
+        for (int i=0; i<=(int)Math.round(line.length() / 2); i++) {
             if (line.charAt(i) != line.charAt(line.length() - i - 1)) {
                 return false;
             }

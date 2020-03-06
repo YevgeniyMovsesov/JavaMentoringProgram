@@ -12,8 +12,8 @@ public class H_04_Task_13 {
         System.out.println(String.format("Предложение: %s", sentence));
         sentence = sentence.toLowerCase();
         int firstPosition = -1;
-        if (sentence.indexOf("чу") >= 0 ) {
-            if (sentence.indexOf("щу") >= 0) {
+        if (sentence.contains("чу")) {
+            if (sentence.contains("щу")) {
                 // Найдено и "чу" и "щу" и надо определить, кто из них раньше
                 firstPosition = Math.min(sentence.indexOf("чу"), sentence.indexOf("щу"));
             } else {
@@ -21,7 +21,7 @@ public class H_04_Task_13 {
                 firstPosition = sentence.indexOf("чу");
             }
         } else {
-            if (sentence.indexOf("щу") >= 0) {
+            if (sentence.contains("щу")) {
                 // Найдено "щу", но "чу" не найдено
                 firstPosition = sentence.indexOf("щу");
             } else {

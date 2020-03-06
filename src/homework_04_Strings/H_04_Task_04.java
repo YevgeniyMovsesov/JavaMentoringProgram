@@ -11,7 +11,7 @@ public class H_04_Task_04 {
         String columnOfChars = "";
         int columnDimension = sentence.replaceAll("[^"+symbol+"]", "").length();
         for (int i=0; i < columnDimension; i++) {
-            columnOfChars = columnOfChars + symbol + "\n";
+            columnOfChars = columnOfChars.concat(symbol + "\n");
         }
         System.out.println(String.format("Предложение: %s", sentence));
         System.out.println(String.format("Столбик символов:\n%s", columnOfChars));

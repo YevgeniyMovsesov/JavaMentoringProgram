@@ -8,8 +8,11 @@ public class H_04_Task_14 {
                 "напечатаны все символы, расположенные после единственной имеющейся\n" +
                 "запятой.\n");
 
-        String sentence = "Скажи-ка, дядя, ведь не даром. Москва, спаленная пожаром, Французу отдана?";
-//        String sentence = "Скажи-ка, дядя";
+        printSymbolsBetweenCommas("Скажи-ка, дядя, ведь не даром. Москва, спаленная пожаром, Французу отдана?");
+        printSymbolsBetweenCommas("Скажи-ка, дядя");
+
+    }
+    private void printSymbolsBetweenCommas (String sentence) {
         System.out.println(String.format("Предложение: %s", sentence));
         int firstCharPosition = sentence.indexOf(",")+1;
         int secondCharPosition = sentence.indexOf(",", firstCharPosition);
@@ -20,6 +23,7 @@ public class H_04_Task_14 {
             String outputString = sentence.substring(firstCharPosition);
             System.out.println(String.format("Символы, расположенные после первой запятой: '%s'", outputString));
         }
+
     }
 
 }

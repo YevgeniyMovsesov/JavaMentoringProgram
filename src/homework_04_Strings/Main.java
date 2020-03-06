@@ -64,8 +64,8 @@ public class Main {
         H_04_Task_30 task30 = new H_04_Task_30();
         task30.run();
         */
-        H_04_Task_30 task30 = new H_04_Task_30();
-        task30.run();
+        H_04_Task_14 task14 = new H_04_Task_14();
+        task14.run();
     }
 
     public static final String taskDelimiter = "------------------------------------------------------------------------\n";
